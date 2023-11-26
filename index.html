@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      ,
+      minimum-scale="1.0"
+      ,
+      maximum-scale="1.0"
+    />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- REMIX ICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>New Portfolio 1.0</title>
+  </head>
+  <body>
+    <nav class="nav flex container">
+      <div class="logo__section flex">
+        <a href="index.html" class="logo"> logo </a>
+        <p class="slogan">Home of Creativity</p>
+      </div>
+      <div class="nav__items flex" id="menu">
+        <ul class="nav__links flex">
+          <li class="nav__link">
+            <a class="link" href="index.html" title="home">home</a>
+          </li>
+          <li class="nav__link">
+            <a class="link" href="assets/pages/about.html" title="about"
+              >about</a
+            >
+          </li>
+          <li class="nav__link">
+            <a class="link" href="assets/pages/services.html" title="services"
+              >services</a
+            >
+          </li>
+          <li class="nav__link">
+            <a class="link" href="assets/pages/portfolio.html" title="portfolio"
+              >portfolio</a
+            >
+          </li>
+          <li class="nav__link">
+            <a class="link" href="assets/pages/blog.html" title="blog">blog</a>
+          </li>
+        </ul>
+
+        <button class="button hire__btn">hire me</button>
+      </div>
+      <button class="hamburger flex" id="menuBtn">
+        <div class="line"></div>
+      </button>
+    </nav>
+
+    <header class="header" id="header">
+      <div class="header__container container">
+        <!-- HERO TEXTBOX -->
+        <div class="hero__textbox">
+          <h5>Hello there,</h5>
+          <h1>
+            I am
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='[ "Haruna Amadu.", "a Front-End Developer.", "a Graphic Design.", "a Photographer." ]'
+            ></span>
+          </h1>
+
+          <ul class="social__media flex">
+            <li>
+              <a href="https://m.facebook.com/profile.php/?id=100002561001081"
+                ><i class="ri-facebook-box-fill"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/_harucane_?igshid=NGVhN2U2NjQ0Yg=="
+                ><i class="ri-instagram-fill"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/harunaamadu"
+                ><i class="ri-github-fill"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                title="Check out Haruna Amadu’s profile on LinkedIn "
+                href="https://gh.linkedin.com/in/haruna-amadu-1112b3127"
+                ><i class="ri-linkedin-box-fill"></i
+              ></a>
+            </li>
+          </ul>
+
+          <div class="hero__btns flex">
+            <button class="button">Get In Touch</button>
+            <button class="button primary-btn">
+              <i class="ri-download-2-line"></i> Download CV
+            </button>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="hero__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/hero.jpg" alt="hero img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/hero-2.jpg" alt="hero img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/hero.jpg" alt="hero img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/hero-2.jpg" alt="hero img" />
+            </div>
+          </div>
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Code :) -->
+    <button class="chatbot__button">
+      <span class="material-symbols-outlined"
+        ><i class="ri-chat-1-line"></i
+      ></span>
+      <span class="material-symbols-outlined">
+        <i class="ri-close-line"></i>
+      </span>
+    </button>
+
+    <div class="chatbot">
+      <div class="chatbot__header">
+        <h3 class="chatbox__title">Chatbot</h3>
+        <span class="material-symbols-outlined">
+          <i class="ri-close-line"></i>
+        </span>
+      </div>
+      <ul class="chatbot__box">
+        <li class="chatbot__chat incoming">
+          <span class="material-symbols-outlined">
+            <i class="ri-robot-2-line"></i>
+          </span>
+          <p>Hi there. How can I help you today?</p>
+        </li>
+        <li class="chatbot__chat outgoing">
+          <p>...</p>
+        </li>
+      </ul>
+      <div class="chatbot__input-box">
+        <textarea
+          class="chatbot__textarea"
+          placeholder="Enter a message..."
+          required
+        ></textarea>
+        <span id="send-btn" class="material-symbols-outlined"
+          >send <i class="ri-send-plane-fill"></i
+        ></span>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
